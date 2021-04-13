@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>苏靖惜的简历</title>
+  </head>
+  <body>
+    <style id="style"></style>
+    <div id="html"></div>
+    <div id="divwrapper">
+      <div id="div1"></div>
+    </div>
+    <style>* {
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      *::after {
+        box-sizing: border-box;
+      }
+      *::before {
+        box-sizing: border-box;
+      }
+      #demo {
+        word-break: break-all;
+      }
+      #div1 {
+        /*放到右上角，Js中背景颜色由css gradient background generator生成*/
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+      }
+      #div1::before {
+        /*用伪元素做太极中间的两个圆（不用div）*/
+        content: " ";
+        display: block; /*形成span元素*/
+        position: absolute;
+      }
+      #div1::after {
+        content: " ";
+        display: block;
+        position: absolute;
+      }
+      @media (max-width: 500px) {
+        /*媒体查询*/
+        #html {
+          height: 50vh;
+          overflow: auto;
+        }
+        #divwrapper {
+          height: 50vh;
+        }
+        #div1 {
+          position: relative;
+          top: 0;
+          right: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+</style>
+    <script src="/index.bd78eeec.js"></script>
+  </body>
+</html>
